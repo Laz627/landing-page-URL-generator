@@ -35,7 +35,7 @@ root_url = st.text_input("Root Domain", value="https://www.example.com", help="T
 campaign_type = st.text_input("Campaign Type", value="splash", help="The type of campaign, e.g., 'splash', 'affiliate', 'email', 'paid-media', etc.")
 page_type = st.text_input("Page Type", value="savings-trigger", help="The type of page, e.g., 'savings-trigger', 'rps-trigger', 'checking-trigger', 'landing-page', etc.")
 product = st.text_input("Product", value="business-checking", help="The specific product, e.g., 'business-checking', 'business-savings', 'business-credit-cards', etc.")
-url_slug = st.text_input("URL Slug Descriptor", value="online-banking-offer", help="A descriptor for the URL slug, e.g., 'online-banking-offer', 'special-deal', 'business-banking-promo', etc.")
+url_slug = st.text_input("URL Slug Descriptor", value="online-banking-offer", help="A descriptor for the URL slug, e.g., 'online-banking-offer', 'special-deal', 'promo', etc.")
 offer_variant = st.text_input("Offer Variant", value="a", help="The offer variant, e.g., 'a', 'b', 'c', etc. Leave blank if not applicable.")
 
 # Generate URL button
