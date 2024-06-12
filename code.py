@@ -27,7 +27,7 @@ st.title("Campaign URL Generator")
 st.text("Created By: Brandon Lazovic")
 st.markdown("""
 This tool helps you generate campaign URLs based on the following inputs. You can leave certain fields blank if they aren't applicable, and the tool will handle the URL generation accordingly. As an example, the generated URL for the example fields below will be:
-`https://www.example.com/splash/savings-trigger/business-checking/online-banking-offer/a.html`
+`https://www.example.com/splash/savings-trigger/business-checking/online-banking-offer/a.html`. Hover over the help toggles to the right of each of the fields for more context on format.
 """)
 
 # Input fields with descriptors
