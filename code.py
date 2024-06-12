@@ -26,11 +26,11 @@ st.title("Campaign URL Generator")
 
 # Input fields with descriptors
 root_url = st.text_input("Root Domain", value="https://www.usbank.com", help="The root domain for the URL, e.g., 'https://www.usbank.com'")
-campaign_type = st.text_input("Campaign Type", value="splash", help="The type of campaign, e.g., 'splash', 'promotion', etc.")
-page_type = st.text_input("Page Type", value="savings-trigger", help="The type of page, e.g., 'savings-trigger', 'landing-page', etc.")
-product = st.text_input("Product", value="business-checking", help="The specific product, e.g., 'business-checking', 'personal-loan', etc.")
-url_slug = st.text_input("URL Slug Descriptor", value="online-banking-offer", help="A descriptor for the URL slug, e.g., 'online-banking-offer', 'special-deal', etc.")
-offer_variant = st.text_input("Offer Variant", value="a", help="The offer variant, e.g., 'a', 'b', etc. Leave blank if not applicable.")
+campaign_type = st.text_input("Campaign Type", value="splash", help="The type of campaign, e.g., 'splash', 'affiliate', 'promotion', etc.")
+page_type = st.text_input("Page Type", value="savings-trigger", help="The type of page, e.g., 'savings-trigger', 'rps-trigger', 'checking-trigger', 'landing-page', etc.")
+product = st.text_input("Product", value="business-checking", help="The specific product, e.g., 'business-checking', 'business-savings', 'business-credit-cards', etc.")
+url_slug = st.text_input("URL Slug Descriptor", value="online-banking-offer", help="A descriptor for the URL slug, e.g., 'online-banking-offer', 'special-deal', 'business-banking-promo'. etc.")
+offer_variant = st.text_input("Offer Variant", value="a", help="The offer variant, e.g., 'a', 'b', 'c', etc. Leave blank if not applicable.")
 
 # Generate URL button
 if st.button("Generate URL"):
