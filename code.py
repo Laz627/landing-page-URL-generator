@@ -1,9 +1,7 @@
 import streamlit as st
 
 # Function to generate the campaign URL
-def generate_url(campaign_type, page_type, product, url_slug, offer_variant):
-    root_url = "https://www.usbank.com"
-    
+def generate_url(root_url, campaign_type, page_type, product, url_slug, offer_variant):
     # Create the URL parts based on provided inputs
     url_parts = [root_url]
     
@@ -27,6 +25,7 @@ def generate_url(campaign_type, page_type, product, url_slug, offer_variant):
 st.title("Campaign URL Generator")
 
 # Input fields with descriptors
+root_url = st.text_input("Root Domain", value="https://www.usbank.com", help="The root domain for the URL, e.g., 'https://www.usbank.com'")
 campaign_type = st.text_input("Campaign Type", value="splash", help="The type of campaign, e.g., 'splash', 'promotion', etc.")
 page_type = st.text_input("Page Type", value="savings-trigger", help="The type of page, e.g., 'savings-trigger', 'landing-page', etc.")
 product = st.text_input("Product", value="business-checking", help="The specific product, e.g., 'business-checking', 'personal-loan', etc.")
@@ -35,5 +34,5 @@ offer_variant = st.text_input("Offer Variant", value="a", help="The offer varian
 
 # Generate URL button
 if st.button("Generate URL"):
-    campaign_url = generate_url(campaign_type, page_type, product, url_slug, offer_variant)
+    campaign_url = generate_url(root_url, campaign_type, page_type, product, url_slug, offer_variant)
     st.success(f"Generated URL: {campaign_url}")
