@@ -12,17 +12,19 @@ def generate_url(root_url, campaign_type, page_type, product, url_slug, offer_va
     if product:
         url_parts.append(product)
     if url_slug:
-        url_parts.append(url_slug)
+        if offer_variant:
+            url_parts.append(url_slug)
+        else:
+            url_parts.append(f"{url_slug}.html")
     if offer_variant:
         url_parts.append(f"{offer_variant}.html")
-    else:
-        url_parts.append("")
     
     # Join the parts to form the final URL
     return "/".join(url_parts).rstrip('/')
 
 # Streamlit app
 st.title("Campaign URL Generator")
+st.text("Created By: Brandon Lazovic")
 
 # Input fields with descriptors
 root_url = st.text_input("Root Domain", value="https://www.example.com", help="The root domain for the URL, e.g., 'https://www.example.com'")
