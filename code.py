@@ -32,7 +32,7 @@ This tool helps you generate campaign URLs based on the following inputs. You ca
 
 # Input fields with descriptors
 root_url = st.text_input("Root Domain", value="https://www.example.com", help="The root domain for the URL, e.g., 'https://www.example.com'")
-campaign_type = st.text_input("Campaign Type", value="splash", help="The type of campaign, e.g., 'splash', 'affiliate', 'promotion', etc.")
+campaign_type = st.text_input("Campaign Type", value="splash", help="The type of campaign, e.g., 'splash', 'affiliate', 'email', 'paid-media', etc.")
 page_type = st.text_input("Page Type", value="savings-trigger", help="The type of page, e.g., 'savings-trigger', 'rps-trigger', 'checking-trigger', 'landing-page', etc.")
 product = st.text_input("Product", value="business-checking", help="The specific product, e.g., 'business-checking', 'business-savings', 'business-credit-cards', etc.")
 url_slug = st.text_input("URL Slug Descriptor", value="online-banking-offer", help="A descriptor for the URL slug, e.g., 'online-banking-offer', 'special-deal', 'business-banking-promo', etc.")
