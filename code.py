@@ -1,4 +1,4 @@
-import streamlit as st
+amimport streamlit as st
 
 # Function to generate the campaign URL
 def generate_url(root_url, campaign_type, page_type, product, url_slug, offer_variant):
@@ -25,7 +25,7 @@ def generate_url(root_url, campaign_type, page_type, product, url_slug, offer_va
 st.title("Campaign URL Generator")
 
 # Input fields with descriptors
-root_url = st.text_input("Root Domain", value="https://www.usbank.com", help="The root domain for the URL, e.g., 'https://www.usbank.com'")
+root_url = st.text_input("Root Domain", value="https://www.example.com", help="The root domain for the URL, e.g., 'https://www.example.com'")
 campaign_type = st.text_input("Campaign Type", value="splash", help="The type of campaign, e.g., 'splash', 'affiliate', 'promotion', etc.")
 page_type = st.text_input("Page Type", value="savings-trigger", help="The type of page, e.g., 'savings-trigger', 'rps-trigger', 'checking-trigger', 'landing-page', etc.")
 product = st.text_input("Product", value="business-checking", help="The specific product, e.g., 'business-checking', 'business-savings', 'business-credit-cards', etc.")
